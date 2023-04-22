@@ -1,11 +1,10 @@
 from src.main_window import MainWindow
+from src.config import Config as cfg
 
 
 def main():
     app: MainWindow = MainWindow(
-        screenName="Argus",
-        baseName="Argus",
-        className="Argus",
+        themename=cfg.theme_name, resizable=(False, False)
     )
     app.mainloop()
 
